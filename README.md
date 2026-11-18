@@ -7,6 +7,16 @@ The first version includes Cataloger, Catalyst SDK, ARM, the Indexer and Console
 Search filters components; URL fragments link directly to a component, such as `#indexer`.
 Source links are pinned to an explicit Velon commit. The live console has its own release.
 
+## Explore on GitHub
+
+| Component    | Responsibility                          | Source                                                                                                                         |
+| ------------ | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Cataloger    | Verified deployment context             | [Resolver](https://github.com/dakewamama/velon/tree/ddd4f77514ae2f40bd2d6723b5772b2c48d5f764/runtime/crates/cataloger)         |
+| Catalyst SDK | Native interpretation and actions       | [Adapters](https://github.com/dakewamama/velon/tree/ddd4f77514ae2f40bd2d6723b5772b2c48d5f764/sdk)                              |
+| ARM          | Protocol-neutral permission meaning     | [Model](https://github.com/dakewamama/velon/tree/ddd4f77514ae2f40bd2d6723b5772b2c48d5f764/arm)                                 |
+| Indexer      | Retained historical facts and coverage  | [Service](https://github.com/dakewamama/velon/tree/ddd4f77514ae2f40bd2d6723b5772b2c48d5f764/runtime/services/catalyst-indexer) |
+| Console      | User explanations and reviewed controls | [Application](https://github.com/dakewamama/velon/tree/ddd4f77514ae2f40bd2d6723b5772b2c48d5f764/app)                           |
+
 ## Run
 
 ```sh

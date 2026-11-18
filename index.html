@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07130f" />
+    <meta
+      name="description"
+      content="Explore Velon's authority intelligence stack, its source code and evidence boundaries."
+    />
+    <title>Velon — Ecosystem Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="Velon Ecosystem Explorer home"
+        ><span class="mark" aria-hidden="true">V</span>velon<span class="slash"
+          >/</span
+        ><span class="brand-section">ecosystem</span></a
+      >
+      <a class="text-link" href="https://github.com/dakewamama/velon"
+        >GitHub <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main>
+      <section class="introduction" aria-labelledby="page-title">
+        <p class="eyebrow">A guide to the source</p>
+        <h1 id="page-title">Explore the authority stack.</h1>
+        <p class="lede">
+          Follow the pieces that turn native Solana state into permission
+          meaning, historical facts and verified controls.
+        </p>
+      </section>
+      <div class="workspace">
+        <aside class="index" aria-label="Component index">
+          <label for="search">Find a component</label>
+          <input
+            id="search"
+            type="search"
+            placeholder="Try history, adapters, evidence…"
+            autocomplete="off"
+          />
+          <p
+            id="result-count"
+            class="count"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <nav id="components" aria-label="Velon components"></nav>
+          <p id="empty" class="empty" hidden>
+            No matching component. Try “history” or “permissions”.
+          </p>
+        </aside>
+        <article class="detail" aria-labelledby="component-name">
+          <div class="detail-top">
+            <p id="category" class="eyebrow"></p>
+            <span class="code-label">SOURCE MAP</span>
+          </div>
+          <h2 id="component-name"></h2>
+          <p id="description" class="description"></p>
+          <dl class="contract">
+            <div>
+              <dt>Receives</dt>
+              <dd id="input"></dd>
+            </div>
+            <div>
+              <dt>Produces</dt>
+              <dd id="output"></dd>
+            </div>
+          </dl>
+          <section class="boundary" aria-labelledby="boundary-label">
+            <h3 id="boundary-label">Evidence boundary</h3>
+            <p id="boundary"></p>
+          </section>
+          <div class="actions">
+            <a id="source-link" class="primary-link"
+              >Open source <span aria-hidden="true">↗</span></a
+            ><a id="contract-link" class="text-link"
+              >Read the contract <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="connections">
+            <h3>Connected to</h3>
+            <div id="related"></div>
+          </div>
+          <p class="path">
+            <span aria-hidden="true">↳</span> <code id="source-path"></code>
+          </p>
+        </article>
+      </div>
+      <section class="references" aria-labelledby="references-title">
+        <div>
+          <p class="eyebrow">Go deeper</p>
+          <h2 id="references-title">The native program stays native.</h2>
+          <p>
+            Velon interprets authority. The supported Solana programs enforce
+            it.
+          </p>
+        </div>
+        <a href="https://github.com/solana-foundation/subscriptions"
+          >Official Subscriptions source <span aria-hidden="true">↗</span></a
+        >
+      </section>
+      <noscript
+        ><p>
+          This explorer needs JavaScript for navigation. Browse the
+          <a href="https://github.com/dakewamama/velon"
+            >Velon source repository</a
+          >
+          directly.
+        </p></noscript
+      >
+    </main>
+    <footer>
+      <p>Show the bytes. Say what you don’t know.</p>
+      <p>
+        Source snapshot <a id="revision-link"></a
+        ><span class="footer-dot">·</span
+        ><a href="https://console.velonsecure.xyz">Live console ↗</a>
+      </p>
+    </footer>
+  </body>
+</html>
